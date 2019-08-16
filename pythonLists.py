@@ -74,3 +74,13 @@ list_to_search = [1, 2, 3, 4, 5]
 index_of_3 = list_to_search.index(3)
 print(index_of_3)
 # if you give a value that is not in the list, there will be an error (NameError)
+
+# list comprehensions - puts items from a list into another list if they meet a condition
+# format: new_list = [item_to_add for temp_item_var in some_list if *temp_item_var meets some condition*]
+itemList = ["Fruit", "Not Fruit", "Fruit"]
+newList = [item for item in itemList if item == "Fruit"]
+print(itemList, newList)
+
+numList = [0,10,20,30]
+added10 = [num + 10 for num in numList]
+print(added10)
